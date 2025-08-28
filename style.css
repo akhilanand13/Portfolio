@@ -1,0 +1,248 @@
+/* Root Variables */
+:root {
+    --text-color: #1a1c20;
+    --link-color: #4a76ee;
+    --background-color: #eeeff1;
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-color);
+    font-weight: 400; 
+    color: var(--text-color);
+}
+
+button {
+    font-weight: 500;
+}
+
+/* General link style */
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    height: 80px;
+    border-bottom: 2px solid #ccc; /* separator bar */
+}
+
+/* Left side (brand/name) */
+nav .left a {
+    color: var(--text-color);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/* Right side (social links) */
+nav .right a {
+    margin: 0 10px;
+    padding: 5px 12px;
+    border-radius: 5px;
+    color: var(--text-color);
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    transition: color 0.5s ease; /* smoother */
+}
+
+/* Icon + text spacing */
+nav .right a span {
+    margin-left: 5px;
+}
+
+/* Sliding Hover Effect */
+nav .right a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0%;
+    height: 100%;
+    background-color: var(--text-color);
+    z-index: -1;
+    transition: width 0.6s ease; /* slower, smoother */
+}
+
+nav .right a:hover::before {
+    width: 100%;
+}
+
+nav .right a:hover {
+    color: var(--background-color);
+}
+
+nav .right a i {
+    transition: color 0.5s ease;
+}
+
+nav .right a:hover i {
+    color: var(--background-color);
+}
+
+/* SECTION 1: HERO */
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+    margin: 25px 0;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 100px;
+}
+
+.hero-section .text {
+    flex: 5;
+}
+
+.hero-section .text h2 {
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* VSCode-style paragraph */
+.hero-section .text p {
+    margin-top: 15px;
+    background-color: #1e1e1e;  
+    color: #d4d4d4;             
+    font-family: "Fira Code", monospace;
+    font-size: 14px;
+    padding: 15px;
+    border-radius: 8px;
+    white-space: pre-line;
+    line-height: 1.5;
+    border-left: 4px solid #4a76ee; 
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+/* Highlight keywords */
+.hero-section .text p .keyword {
+    color: #569cd6;
+}
+.hero-section .text p .function {
+    color: #dcdcaa;
+}
+.hero-section .text p .string {
+    color: #ce9178;
+}
+.hero-section .text p .comment {
+    color: #6a9955;
+    font-style: italic;
+}
+
+/* Hero links */
+.hero-section .text .links {
+    margin-top: 25px;
+}
+
+.hero-section .text .links a {
+    display: inline-block;
+    padding: 5px 12px;
+    border: 2px solid var(--link-color);
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: var(--link-color);
+    transition: all 0.4s ease;
+}
+
+.hero-section .text .links a:hover {
+    background-color: var(--link-color);
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* Headshot */
+.hero-section .headshot {
+    flex: 2;
+    display: flex;
+    justify-content: right;
+}
+
+.hero-section .headshot img {
+    width: 270px;
+    border-radius: 8%;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+/* Responsive */
+@media (max-width: 850px) {
+    .hero-section .text h2 {
+        font-size: 32px;
+    }
+    .hero-section .headshot img {
+        width: 200px;
+    }
+}
+
+@media(max-width: 740px) {
+    .hero-section {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .hero-section .headshot img {
+        width: 180px;
+    }
+}
+
+@media (max-width: 600px) {
+    nav {
+        padding: 0 20px;
+    }
+    nav .right a {
+        font-size: 22px;
+    }
+    nav .right a span {
+        display: none;
+    }
+    .hero-section {
+        padding: 0 20px;
+    }
+    .hero-section .text h2 {
+        font-size: 26px;
+        justify-content: center;
+    }
+}
+
+.typing-animation {
+  font-family: inherit;
+  font-size: 1rem;
+  white-space: pre-line;
+  border-right: 2px solid #333;
+  overflow: hidden;
+  width: 100%;        /* full width of container */
+  min-height: 4em;    /* keeps the height fixed */
+  display: inline-block;
+  animation: blink 1s step-end infinite;
+}
+
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink {
+  0%, 100% { border-color: #333; }
+  50% { border-color: transparent; }
+}

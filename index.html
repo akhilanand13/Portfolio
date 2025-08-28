@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+  <title>Portfolio</title>
+</head>
+<body>
+  <nav>
+    <div class="left">
+      <a href="/"><span class="name">&lt;Akhil Anand Balu /&gt;</span></a>
+    </div>
+    <div class="right">
+      <a href="https://github.com/akhilanand13" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-github"></i>
+        <span>Github</span>
+      </a>
+      <a href="https://www.linkedin.com/in/akhil-anand-balu/?originalSubdomain=in" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-linkedin-in"></i>
+        <span>LinkedIn</span>
+      </a>
+      <a href="https://drive.google.com/file/d/1EJQosG5LZbtsWYp9wFvPE6VAi6O1Lahn/view?usp=drivesdk" target="_blank" rel="noopener noreferrer">
+        <i class="fa-solid fa-file-arrow-down"></i>
+        <span>Resume</span>
+      </a>
+    </div>
+  </nav>
+
+  <!-- Horizontal Separator -->
+  <hr class="nav-separator">
+
+  <main>
+    <!-- SECTION 1: Myself-->
+    <section class="hero-section">
+      <div class="text">
+        <h2 style="font-weight:500;">Hi, My name is Akhil <i class="fas fa-alien"></i></h2>
+        <p class="typing-animation"></p>
+        <div class="links">
+          <a href="#skills">
+            <i class="fa-solid fa-code"></i>
+            <span>Skills</span>
+          </a>
+          <a href="#testimony">
+            <i class="fa-solid fa-pen"></i>
+            <span>Testimony</span>
+          </a>
+          <a href="#contact">
+            <i class="fa-solid fa-envelope"></i>
+            <span>Contact</span>
+          </a>
+        </div>
+      </div>
+      <div class="headshot">
+        <img src="images/me.webp" alt="Anonymous User">
+      </div>
+    </section>
+
+    <!--SECTION 2: Skills-->
+    <section id="skills"></section>
+
+    <!--SECTION 3: Contact-->
+    <section id="contact"></section>
+  </main>
+  <script>
+    const text = "I'm a computer science engineer who translates caffeine into functional code. If you've landed here, let's run a quick check: if (recruiter) let's connect; else if (friend) you're stalking again, aren't you? For everyone else, you've discovered a bug in the matrix. Welcome to my professional facade.";
+    const typingElement = document.querySelector('.typing-animation');
+    let i = 0;
+    function typeWriter() {
+        if (i < text.length) {
+            typingElement.textContent += text.charAt(i);
+            i++;
+            setTimeout(typeWriter, 40); // slower speed (was 18)
+        }
+    }
+    window.addEventListener('DOMContentLoaded', typeWriter);
+</script>
+
+</body>
+</html>
