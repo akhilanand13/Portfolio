@@ -6,7 +6,7 @@
     --card-background: #ffffff;
     --border-color: #d1d5db;
     --skill-tag-bg: #f3f4f6;
-    --skill-tag-bg-hover: #d1d5db; /* Made this darker for a better hover effect */
+    --skill-tag-bg-hover: #d1d5db;
 }
 
 /* Reset */
@@ -23,7 +23,7 @@ html {
 body {
     font-family: 'Poppins', sans-serif;
     background-color: var(--background-color);
-    font-weight: 400; 
+    font-weight: 400;  
     color: var(--text-color);
 }
 
@@ -52,6 +52,12 @@ nav .left a {
     color: var(--text-color);
     font-size: 20px;
     font-weight: 500;
+}
+
+/* ADDED: Spacing for the name element in the navbar */
+nav .left .name {
+    padding: 0 5px;
+    letter-spacing: 0.5px;
 }
 
 nav .right a {
@@ -122,7 +128,7 @@ nav .right a:hover i {
 .hero-section .text p {
     margin-top: 15px;
     background-color: #1e1e1e;  
-    color: #d4d4d4;           
+    color: #d4d4d4;            
     font-family: "Fira Code", monospace;
     font-size: 14px;
     padding: 15px;
@@ -158,8 +164,8 @@ nav .right a:hover i {
 .hero-section .headshot {
     flex: 2;
     display: flex;
-    flex-direction: column; /* Align image and caption vertically */
-    align-items: center; /* Center items */
+    flex-direction: column;
+    align-items: center;
     justify-content: right;
 }
 
@@ -169,7 +175,6 @@ nav .right a:hover i {
     box-shadow: 0 4px 12px rgba(0,0,0,0.3);
 }
 
-/* Headshot Caption Style */
 .headshot-caption {
     font-size: 0.9rem;
     font-style: italic;
@@ -205,7 +210,7 @@ nav .right a:hover i {
 }
 
 .quote-section blockquote {
-    font-size: 1.2rem; /* Made quote slightly larger */
+    font-size: 1.2rem;
     margin-bottom: 10px;
 }
 
@@ -213,7 +218,7 @@ nav .right a:hover i {
 .section-title {
     font-size: 28px;
     font-weight: 700;
-    margin-bottom: 50px; /* Increased bottom margin */
+    margin-bottom: 50px;
     position: relative;
     display: inline-block;
     text-align: center;
@@ -225,7 +230,7 @@ nav .right a:hover i {
     width: 60%;
     height: 3px;
     background-color: var(--link-color);
-    bottom: -15px; /* Increased distance */
+    bottom: -15px;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -253,7 +258,7 @@ nav .right a:hover i {
     align-items: center;
     margin-bottom: 8px;
     flex-wrap: wrap;
-    gap: 10px; /* Added gap for better spacing on wrap */
+    gap: 10px;
 }
 
 .degree {
@@ -294,7 +299,6 @@ nav .right a:hover i {
     margin-top: 15px;
 }
 
-/* Grade History Button Re-added */
 .grade-history-btn {
     background-color: transparent;
     border: 2px solid var(--border-color);
@@ -343,7 +347,7 @@ nav .right a:hover i {
     font-weight: 700;
     margin-bottom: 20px;
     position: relative;
-    padding-left: 30px; /* Increased padding to fix overlap */
+    padding-left: 30px;
 }
 
 .skill-category h3::before {
@@ -368,10 +372,9 @@ nav .right a:hover i {
     border-radius: 15px;
     font-size: 0.85rem;
     font-weight: 500;
-    transition: all 0.3s ease; 
+    transition: all 0.3s ease;  
 }
 
-/* Skill Tag Hover Effect Enhanced */
 .skill-tag:hover {
     background-color: var(--skill-tag-bg-hover);
     transform: translateY(-2px);
@@ -400,6 +403,7 @@ nav .right a:hover i {
     box-shadow: 0 6px 15px rgba(0,0,0,0.1);
 }
 
+/* MODIFIED: This now applies to Education and Experience sections */
 .experience-header {
     display: flex;
     justify-content: space-between;
@@ -413,14 +417,17 @@ nav .right a:hover i {
     font-weight: 700;
     color: var(--text-color);
     margin-bottom: 5px;
+    display: flex; /* ADDED for aligning link icon */
+    align-items: center; /* ADDED for aligning link icon */
 }
 
-.company-location {
-    text-align: right;
+/* ADDED: New container for company details */
+.company-details {
+    margin-bottom: 15px;
 }
 
+/* MODIFIED: Removed 'display: block' to keep name and location inline */
 .company-name {
-    display: block;
     font-size: 1rem;
     font-weight: 500;
     color: var(--link-color);
@@ -435,13 +442,12 @@ nav .right a:hover i {
     margin-right: 5px;
 }
 
-.experience-item .duration {
-    margin-top: -5px; 
-    margin-bottom: 15px;
-}
-
+/* CONSOLIDATED: Unified duration styling for all sections */
+.experience-item .duration,
 .project-item .duration,
 .research-item .duration {
+    color: #4b5563;
+    font-size: 0.95rem;
     margin-bottom: 15px;
 }
 
@@ -478,6 +484,18 @@ nav .right a:hover i {
     flex-wrap: wrap;
     gap: 10px;
     margin-bottom: 20px;
+}
+
+/* ADDED: Styling for the GitHub icon link in project titles */
+.project-github-link {
+    font-size: 1.1rem;
+    margin-left: 12px;
+    color: var(--text-color);
+    transition: color 0.3s ease;
+}
+
+.project-github-link:hover {
+    color: var(--link-color);
 }
 
 .certificate-link {
@@ -525,7 +543,7 @@ nav .right a:hover i {
     display: flex;
     flex-direction: column;
     gap: 25px;
-    justify-content: center; /* Vertically center info items */
+    justify-content: center;
 }
 
 .info-item {
@@ -535,10 +553,10 @@ nav .right a:hover i {
 }
 
 .info-item i {
-    font-size: 22px; /* Adjusted size */
+    font-size: 22px;
     color: var(--link-color);
-    width: 45px; /* Adjusted size */
-    height: 45px; /* Adjusted size */
+    width: 45px;
+    height: 45px;
     display: grid;
     place-items: center;
     background-color: #e0e7ff;
@@ -562,7 +580,7 @@ nav .right a:hover i {
 }
 
 .contact-form {
-    flex: 1.5; /* Gave form slightly more space */
+    flex: 1.5;
 }
 
 .contact-form form {
@@ -624,7 +642,7 @@ nav .right a:hover i {
     margin-left: 8px;
 }
 
-/* MODAL STYLES (Re-added) */
+/* MODAL STYLES */
 .modal {
     display: none; 
     position: fixed;
@@ -767,10 +785,8 @@ footer {
     .contact-container {
         padding: 25px;
     }
-    /* Modal responsive style */
     .modal-content {
       width: 90%;
       margin: 25% auto;
     }
 }
-
