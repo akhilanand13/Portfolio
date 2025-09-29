@@ -6,7 +6,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" xintegrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="style.css">
   <title>Portfolio</title>
 </head>
@@ -28,8 +28,7 @@
         <i class="fa-brands fa-linkedin-in"></i>
         <span>LinkedIn</span>
       </a>
-      <!-- Resume URL Updated -->
-      <a href="https://drive.google.com/file/d/1UdxY9hnhqORaHpkruCJHc1ttfcMFI74q/view?usp=drivesdk" target="_blank" rel="noopener noreferrer">
+      <a href="https://drive.google.com/file/d/1Xe9lQhaul--K4H7XdfyzZQNLvT_UO8PZ/view?usp=drivesdk" target="_blank" rel="noopener noreferrer">
         <i class="fa-solid fa-file-arrow-down"></i>
         <span>Resume</span>
       </a>
@@ -37,7 +36,6 @@
   </nav>
 
   <main>
-    <!-- SECTION 1: Myself-->
     <section class="hero-section">
       <div class="text">
         <h2 style="font-weight:500;">Hi, My name is Akhil Anand Balu <i class="fa-solid fa-robot"></i></h2>
@@ -75,16 +73,13 @@
       </div>
     </section>
 
-    <!-- Quote Section Updated -->
     <section class="quote-section">
       <blockquote>“Perfectionism is procrastination in disguise.”</blockquote>
     </section>
 
-    <!-- Education Section -->
     <section id="education" class="content-section">
       <h2 class="section-title">Education</h2>
       <div class="education-container">
-        <!-- B.Tech Degree -->
         <div class="education-item">
           <div class="education-header">
             <h3 class="degree">B. Tech Computer Science and Engineering</h3>
@@ -93,10 +88,8 @@
           <p class="institution"><i class="fa-solid fa-location-dot"></i> Vellore Institute of Technology, Vellore</p>
           <p class="duration">Expected May 2026</p>
           <p class="coursework"><strong>Relevant Coursework:</strong> Data Structures and Algorithms, Operating Systems, Database Management Systems, Computer Networks, Software Engineering, Cloud Computing.</p>
-          <!-- Grade History Button Re-added -->
           <button class="grade-history-btn" id="gradeBtn"><i class="fa-solid fa-award"></i> Grade History</button>
         </div>
-        <!-- Class XII -->
         <div class="education-item">
           <div class="education-header">
             <h3 class="degree">Class XII</h3>
@@ -105,7 +98,6 @@
           <p class="institution"><i class="fa-solid fa-location-dot"></i> Velammal Matriculation Higher Secondary School, Tiruvallur</p>
           <p class="duration">2021 - 2022</p>
         </div>
-        <!-- Class X -->
         <div class="education-item">
           <div class="education-header">
             <h3 class="degree">Class X</h3>
@@ -117,7 +109,6 @@
       </div>
     </section>
     
-    <!-- Skills Section -->
     <section id="skills" class="content-section">
         <h2 class="section-title">Skills</h2>
         <div class="skills-container">
@@ -126,7 +117,17 @@
                 <div class="skill-tags">
                     <span class="skill-tag">Java</span>
                     <span class="skill-tag">Python</span>
+                    <span class="skill-tag">C</span>
                     <span class="skill-tag">JavaScript</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Software Development</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">OOP</span>
+                    <span class="skill-tag">SDLC</span>
+                    <span class="skill-tag">Unit Testing</span>
+                    <span class="skill-tag">Agile/Scrum</span>
                 </div>
             </div>
             <div class="skill-category">
@@ -140,9 +141,11 @@
                 </div>
             </div>
             <div class="skill-category">
-                <h3>Cloud Computing</h3>
+                <h3>Cloud & Infrastructure</h3>
                 <div class="skill-tags">
-                    <span class="skill-tag">AWS</span>
+                    <span class="skill-tag">AWS (Certified Cloud Practitioner)</span>
+                    <span class="skill-tag">Docker</span>
+                    <span class="skill-tag">Kubernetes</span>
                 </div>
             </div>
             <div class="skill-category">
@@ -157,31 +160,29 @@
                 <div class="skill-tags">
                     <span class="skill-tag">Git</span>
                     <span class="skill-tag">GitHub</span>
-                    <span class="skill-tag">Docker</span>
-                    <span class="skill-tag">Kubernetes</span>
-                    <span class="skill-tag">Ansible</span>
+                    <span class="skill-tag">CI/CD Pipelines</span>
+                    <span class="skill-tag">JMeter</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Experience Section -->
     <section id="experience" class="content-section">
         <h2 class="section-title">Professional Experience</h2>
         <div class="experience-container">
             <div class="experience-item">
                 <div class="experience-header">
                     <h3 class="job-title">IT Systems Intern</h3>
-                    <div class="company-location">
-                        <span class="company-name">Chennai Metro Rail Limited</span>
-                        <span class="location"><i class="fa-solid fa-location-dot"></i> Chennai, Tamil Nadu</span>
-                    </div>
+                    <p class="duration">May 2025 – June 2025</p>
                 </div>
-                <p class="duration">May 2025 – June 2025</p>
+                <div class="company-details">
+                    <span class="company-name">Chennai Metro Rail Limited</span>
+                    <span class="location"><i class="fa-solid fa-location-dot"></i> Chennai, Tamil Nadu</span>
+                </div>
                 <ul>
-                    <li>Executed server load and stress testing using Apache JMeter to measure system behaviour under varying traffic conditions.</li>
+                    <li>Conducted load and stress testing using Apache JMeter to measure system behaviour under varying traffic conditions.</li>
                     <li>Analysed test results to identify bottlenecks and recommended optimizations through detailed performance reports.</li>
-                    <li>Collaborated with the IT team to validate scalability and improve reliability of ticketing workflows in a public transport.</li>
+                    <li>Collaborated with the IT team to validate scalability and improve reliability of ticketing workflows in public transport.</li>
                 </ul>
                 <a href="https://drive.google.com/file/d/1BPRzddOQ5CH4F9S3NOj19YYjziNRzxke/view?usp=drivesdk" class="certificate-link" target="_blank" rel="noopener noreferrer">
                     <i class="fa-solid fa-certificate"></i> View Certificate
@@ -190,16 +191,16 @@
             <div class="experience-item">
                 <div class="experience-header">
                     <h3 class="job-title">Web Development Intern</h3>
-                    <div class="company-location">
-                        <span class="company-name">HTC Global Services</span>
-                        <span class="location"><i class="fa-solid fa-location-dot"></i> Chennai, Tamil Nadu</span>
-                    </div>
+                    <p class="duration">June 2024 – July 2024</p>
                 </div>
-                <p class="duration">June 2024 – July 2024</p>
+                <div class="company-details">
+                    <span class="company-name">HTC Global Services</span>
+                    <span class="location"><i class="fa-solid fa-location-dot"></i> Chennai, Tamil Nadu</span>
+                </div>
                 <ul>
-                    <li>Learned server-side development using Node.js through hands-on exercises and weekly assessments to strengthen backend skills.</li>
+                    <li>Gained experience in server-side development using Node.js through hands-on exercises and weekly assessments.</li>
                     <li>Applied concepts to small-scale backend tasks, including form submissions and basic routing, contributing to ongoing projects.</li>
-                    <li>Gained hands-on experience with MySQL, learning database design, queries, and secure data operations.</li>
+                    <li>Gained hands-on experience with MySQL, applied database design, queries, and secure data operations.</li>
                 </ul>
                 <a href="https://drive.google.com/file/d/1oGJqzDf5yzqtQ33pY4tjpGOK8u129_5B/view?usp=drivesdk" class="certificate-link" target="_blank" rel="noopener noreferrer">
                     <i class="fa-solid fa-certificate"></i> View Certificate
@@ -208,7 +209,6 @@
         </div>
     </section>
 
-    <!-- Projects Section -->
     <section id="projects" class="content-section">
         <h2 class="section-title">Academic Projects</h2>
         <div class="projects-container">
@@ -217,12 +217,14 @@
                 <p class="duration">May 2025 - Present</p>
                 <div class="project-tags">
                     <span class="skill-tag">Docker</span>
+                    <span class="skill-tag">Firecrawl</span>
                     <span class="skill-tag">MCP Server</span>
-                    <span class="skill-tag">A2A Protocol</span>
+                    <span class="skill-tag">CrewAI</span>
+                    <span class="skill-tag">Streamlit</span>
                 </div>
                 <ul>
                     <li>Developing a full-stack AI tool to automatically generate Docker Compose files from simple conversational text.</li>
-                    <li>Developing a stateful MCP server to manage conversational context, ensuring accuracy for complex Docker deployments.</li>
+                    <li>Designed a stateful MCP server to manage conversational context, ensuring accuracy for complex Docker deployments.</li>
                     <li>Architecting a persistent storage solution with MySQL for user data while using Docker to streamline microservice deployment.</li>
                 </ul>
             </div>
@@ -234,7 +236,6 @@
                     <span class="skill-tag">MongoDB</span>
                     <span class="skill-tag">Razorpay</span>
                     <span class="skill-tag">Docker</span>
-                    <span class="skill-tag">Ansible</span>
                 </div>
                 <ul>
                     <li>Developed a web-based system for users to browse, filter, and book turfs with secure role-based authentication.</li>
@@ -242,21 +243,38 @@
                 </ul>
             </div>
             <div class="project-item">
-                <h3 class="project-title">Live Subtitle Generation (Hackathon)</h3>
-                <p class="duration">December 2022</p>
+                <h3 class="project-title">Live Subtitle Generation (Hackathon on Tamil Computing, VIT Vellore)</h3>
+                <p class="duration">December 2023</p>
                  <div class="project-tags">
                     <span class="skill-tag">Flask</span>
                     <span class="skill-tag">Google Translate API</span>
                 </div>
                 <ul>
                     <li>Developed a system to generate subtitles from provided video scripts in any language using Google Translate API.</li>
-                    <li>Integrated and deployed the system using Flask framework, enabling seamless processing and output of translated subtitles.</li>
+                    <li>Integrated and deployed the system using the Flask framework, enabling seamless processing and output of translated subtitles.</li>
+                </ul>
+            </div>
+             <div class="project-item">
+                <h3 class="project-title">
+                    CloudEye
+                    <a href="https://github.com/akhilanand13/CloudEye/tree/main" target="_blank" rel="noopener noreferrer" class="project-github-link">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </h3>
+                <div class="project-tags">
+                    <span class="skill-tag">AWS S3</span>
+                    <span class="skill-tag">Rekognition</span>
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">boto3</span>
+                </div>
+                <ul>
+                    <li>Integrated AWS S3 with Rekognition, enabling seamless retrieval and processing of images stored in the cloud.</li>
+                    <li>Gained hands-on experience with cloud-based computer vision, boto3 (Python AWS SDK), and cloud storage management.</li>
                 </ul>
             </div>
         </div>
     </section>
 
-    <!-- Research Section -->
     <section id="research" class="content-section">
         <h2 class="section-title">Research Work</h2>
         <div class="research-container">
@@ -272,7 +290,6 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
     <section id="contact" class="content-section">
         <h2 class="section-title">Get In Touch</h2>
         <p class="section-subtitle">
@@ -284,7 +301,6 @@
                     <i class="fa-solid fa-envelope"></i>
                     <div>
                         <h4>Email</h4>
-                        <!-- Email Updated -->
                         <a href="mailto:akhilanandbalu2004@gmail.com">akhilanandbalu2004@gmail.com</a>
                     </div>
                 </div>
@@ -319,17 +335,14 @@
     </section>
   </main>
 
-  <!-- Footer Section -->
   <footer>
     <p>&copy; 2025 Akhil Anand Balu. All Rights Reserved.</p>
   </footer>
   
-  <!-- Grade History Modal -->
   <div id="gradeModal" class="modal">
     <div class="modal-content">
       <span class="close-btn">&times;</span>
       <h3>Grade History (B.Tech)</h3>
-      <!-- You can replace this with your actual grade history -->
       <ul>
         <li><strong>Semester 1:</strong> GPA - 9.0</li>
         <li><strong>Semester 2:</strong> GPA - 8.8</li>
@@ -353,7 +366,7 @@
     }
     window.addEventListener('DOMContentLoaded', typeWriter);
 
-    // Modal script (re-added)
+    // Modal script
     const modal = document.getElementById("gradeModal");
     const btn = document.getElementById("gradeBtn");
     const span = document.getElementsByClassName("close-btn")[0];
@@ -374,5 +387,3 @@
   </script>
 </body>
 </html>
-
-
